@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+#navbar {
+  background: orange;
+  color: white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#navbar p {
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+#navbar a:hover {
+  color: black;
+}
+
+header {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+#te {
+  color: orange;
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 20px;
+}
+
+.about {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.about-img {
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px orange;
+}
+
+h2 {
+  color: orange;
+  border: 2px solid orange;
+  border-radius: 20px;
+  width: fit-content;
+  margin: 0 auto 20px;
+  padding: 10px 25px;
+}
+
+#abt {
+  font-size: 18px;
+  color: white;
+  text-align: justify;
+}
+
+#it {
+  color: orange;
+  font-weight: bold;
+}
+
+.cen, .off {
+  text-align: center;
+  margin: 20px auto;
+}
+
+h3 {
+  text-align: center;
+  color: orange;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+#wri {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  margin: 0 auto 40px;
+  width: 80%;
+}
+
+/* ======= OFFERS SECTION ======= */
+.offers {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 30px 20px;
+}
+
+.offer-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  flex: 1 1 280px;
+  max-width: 320px;
+  transition: transform 0.3s ease;
+}
+
+.offer-card:hover {
+  transform: scale(1.05);
+}
+
+.service-img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.offer-card p {
+  font-size: 17px;
+  color: white;
+}
+
+/* ======= SKILLS SECTION ======= */
+#skills {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  width: 80%;
+  margin: auto;
+  max-width: 600px;
+}
+
+.skill {
+  width: 100%;
+  text-align: left;
+}
+
+.skill h4 {
+  color: orange;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.progress {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  height: 12px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bar {
+  height: 12px;
+  border-radius: 10px;
+  background: orange;
+}
+
+.bar.html { width: 85%; }
+.bar.css { width: 75%; }
+.bar.design { width: 90%; }
+
+.registerBox {
+  text-align: center;
+  margin: 60px auto;
+  padding: 50px 20px;
+  max-width: 600px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+h4 {
+  color: orange;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+input {
+  background: transparent;
+  color: white;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid white;
+  width: 80%;
+  font-size: 18px;
+  height: 45px;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+button {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  width: 200px;
+  background: orange;
+  border-radius: 25px;
+  border: none;
+  height: 40px;
+  color: black;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: white;
+  color: black;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: gray;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .offers {
+    flex-direction: column;
+  }
+
+  input {
+    width: 100%;
+  }
+}
